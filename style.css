@@ -10,7 +10,7 @@
 
 body {
   /* Set the default font and padding for the body */
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 20px;
   background-color: #322c2b;
@@ -20,6 +20,9 @@ h1 {
   /* Center the main title and set its color */
   text-align: center;
   color: var(--primary-color);
+  font-family: "Playfair Display SC", serif;
+  font-size: 2.5rem;
+  font-weight: 900;
 }
 
 .todo-container {
@@ -47,6 +50,7 @@ h1 {
   border-radius: var(--main-border-radius);
   width: 100%;
   background-color: transparent;
+  font-family: inherit;
 }
 
 .todo-input:focus {
@@ -65,6 +69,7 @@ h1 {
   cursor: pointer;
   margin: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  font-family: inherit;
 }
 
 .todo-list {
@@ -82,6 +87,17 @@ h1 {
   background-color: rgba(255, 255, 255, 0.699);
   border-radius: var(--main-border-radius);
   margin: 10px 0;
+  font-family: inherit;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  animation: fadeIn 0.5s;
+}
+
+.todo-item:hover {
+  /* Add a hover effect to the to-do items */
+  background-color: rgba(255, 255, 255, 0.8);
+  transform: translate(0px, 2px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
 }
 
 .todo-item.completed {
@@ -99,4 +115,14 @@ h1 {
   border: none;
   cursor: pointer;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  font-family: inherit;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

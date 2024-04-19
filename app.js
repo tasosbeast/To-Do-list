@@ -54,10 +54,3 @@ todoInputEl.addEventListener("keydown", (event) => {
 });
 
 todoListEl.addEventListener("change", markTaskCompleted);
-
-//Examples of tasks
-const initialTasks = ["Buy groceries", "Read a book", "Go for a walk"];
-initialTasks.forEach((task) => {
-  const taskItemEl = createTaskItem(task);
-  todoListEl.appendChild(taskItemEl);
-});

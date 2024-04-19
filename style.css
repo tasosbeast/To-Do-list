@@ -1,4 +1,5 @@
 :root {
+  /* Define the color scheme and some common values for the application */
   --primary-color: #803d3b;
   --secondary-color: #e4c59e;
   --tertiary-color: #af8260;
@@ -8,17 +9,20 @@
 }
 
 body {
+  /* Set the default font and padding for the body */
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 20px;
 }
 
 h1 {
+  /* Center the main title and set its color */
   text-align: center;
   color: var(--primary-color);
 }
 
 .todo-container {
+  /* Style the main container for the to-do list */
   max-width: 600px;
   margin: 0 auto;
   background-color: var(--secondary-color);
@@ -28,6 +32,7 @@ h1 {
 }
 
 .input-container {
+  /* Style the container for the input field and add task button */
   display: flex;
   justify-content: space-between;
   background-color: rgba(255, 255, 255, 0.699);
@@ -35,6 +40,7 @@ h1 {
 }
 
 .todo-input {
+  /* Style the input field for adding new tasks */
   border: none;
   padding: var(--main-medium-padding);
   border-radius: var(--main-border-radius);
@@ -43,10 +49,12 @@ h1 {
 }
 
 .todo-input:focus {
+  /* Remove the outline when the input field is focused */
   outline: none;
 }
 
 .add-task-btn {
+  /* Style the add task button */
   border: none;
   padding: var(--main-small-padding);
   border-radius: var(--main-border-radius);
@@ -59,11 +67,13 @@ h1 {
 }
 
 .todo-list {
+  /* Remove the default list style */
   list-style: none;
   padding: 0;
 }
 
 .todo-item {
+  /* Style the individual to-do items */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -74,11 +84,13 @@ h1 {
 }
 
 .todo-item.completed {
+  /* Style the to-do items that are marked as completed */
   text-decoration: line-through 2px var(--primary-color);
   opacity: 0.5;
 }
 
 .delete-btn {
+  /* Style the delete button */
   background-color: var(--primary-color);
   color: white;
   border-radius: var(--main-border-radius);
